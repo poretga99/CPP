@@ -1,18 +1,28 @@
 #include <iostream>
 int main()
 {
-    std::cout << "Enter two numbers:" << std::endl;
-    int v1, v2;
-    std::cin >> v1 >> v2;
-    std::cout << "The sum of " << v1 << " and " << v2
-			  << " is " << v1 + v2 << std::endl;
-    // 1.3 naloga
-    std::cout << "Hello, World!" << std::endl;
-    // 1.4 naloga
-    std::cout << "Enter two numbers again:" << std::endl;
-    int u1, u2;
-    std::cin >> u1 >> u2;
-    std::cout << "The product of " << u1 << " and " << u2 << " is " << u1 * u2 << std::endl;
+    int sum = 0, val = 1;
+    while (val <= 10)
+    {
+    	sum += val;
+    	++val;
+    }
+    std::cout << "Sum of 1 to 10, inclusive is " << sum << std::endl;
+
+    int sum2 = 0;
+    for (int val2 = 1; val2 <= 10; ++val2)
+    {
+        sum2 += val2;
+    }
+    std::cout << "Sum of 1 to 10 inclusive is " << sum2 << std::endl;
+
+    int sum3 = 0;
+    for (int i = -100; i <= 100; ++i)
+    {
+    	sum3 += i;
+    }
+
+    std::cout << "The sum from -100 to 100 in for loop is: " << sum3 << std::endl;
+
     return 0;
-    //1.5 not legal, we dont use any operand after ;
 }
