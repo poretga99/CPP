@@ -1,19 +1,17 @@
 #include <iostream>
 int main()
 {
-    int num = 10;
-    while (num >= 0)
-    {
-    	std::cout << num << std::endl;
-    	num -= 1;
-    }
-
-
-    std::cout << "Using for loop: " << std::endl;
-
-    for (int i = 10; i >= 0; --i)
-    {
-    	std::cout << i << std::endl;
-    }
+	std::cout << "Enter pair of values." << std::endl;
+	int first, second, larger;
+	std::cin >> first >> second;
+	if (first > second)
+	{
+		larger = first;
+	}
+	else
+	{
+		larger = second;
+	}
+	std::cout << "Larger number is: " << larger << std::endl;
     return 0;
 }
