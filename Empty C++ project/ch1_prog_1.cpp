@@ -1,17 +1,15 @@
 #include <iostream>
 int main()
 {
-	std::cout << "Enter pair of values." << std::endl;
-	int first, second, larger;
-	std::cin >> first >> second;
-	if (first > second)
+	std::cout << "Enter unknown number of values. Remeber to terminate with CTRL+D!" << std::endl;
+	int sum = 0, value;
+	while (std::cin >> value)
 	{
-		larger = first;
+		if (value < 0)
+		{
+			sum += 1;
+		}
 	}
-	else
-	{
-		larger = second;
-	}
-	std::cout << "Larger number is: " << larger << std::endl;
+	std::cout << "Number of negative values is: " << sum << std::endl;
     return 0;
 }
